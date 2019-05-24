@@ -1,26 +1,41 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import { Route, BrowserRouter, Switch } from "react-router-dom";
+import Books from "./components/Books";
+import Details from "./components/Details";
+import Favourites from "./components/Favourites";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import { connect } from "react-redux";
+import { fetchBooksSuccess, fetchBooks } from "../src/actions/action";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  componentDidMount() {
+    this.props.fetchBooksActions();
+  }
+
+  render() {
+    return (
+      <div className="App">
+        <BrowserRouter>
+          <Header />
+          <Switch>
+            <Route exact path="/" component={Books} />
+            <Route exact path="/details/:id" component={Details} />
+            <Route exact path="/favourites" component={Favourites} />
+          </Switch>
+          <Footer />
+        </BrowserRouter>
+      </div>
+    );
+  }
 }
 
-export default App;
+const mapDispatchToProps = dispatch => ({
+  booksActions: bookData => dispatch(fetchBooksSuccess(bookData)),
+  fetchBooksActions: query => dispatch(fetchBooks(query))
+});
+
+export default connect(
+  null,
+  mapDispatchToProps
+)(App);

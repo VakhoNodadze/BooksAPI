@@ -1,0 +1,27 @@
+.main {
+  display: grid;
+  width: 90%;
+  margin-top: 2em;
+  grid-template-columns: 350px auto;
+  grid-column-gap: 2.5em;
+  grid-template-areas:
+    "picture description"
+    "details description";
+  & img {
+    margin-left: 2.5em;
+  }
+}
+.description {
+  grid-area: description;
+  grid-column: 2/3;
+}
+.details {
+  grid-area: details;
+  grid-column: 1/3;
+  margin-top: 2em;
+  grid-row: 2;
+  margin-left: 2.5em;
+  & a {
+    text-decoration: none;
+  }
+}
