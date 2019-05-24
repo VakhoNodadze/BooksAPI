@@ -19,7 +19,7 @@ class App extends Component {
         <BrowserRouter>
           <Header />
           <Switch>
-            <Route exact path="/" component={Books} />
+            <Route exact path="/home" component={Books} />
             <Route exact path="/details/:id" component={Details} />
             <Route exact path="/favourites" component={Favourites} />
           </Switch>
