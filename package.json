@@ -2,7 +2,7 @@
   "name": "movies-api",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://vakhonodadze.github.io/Book-API",
+  "homepage": "https://vakhonodadze.github.io/BooksAPI",
   "dependencies": {
     "gh-pages": "^2.0.1",
     "react": "^16.8.6",
