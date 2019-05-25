@@ -27,7 +27,7 @@ const Book = props => {
       </section>
       <Like isFavourite={book.isFavourite} onClick={() => onLike(book.id)} />
       <p className={style.readmore}>
-        <Link to={`/details/${book.id}`}>Read More >></Link>
+        <Link to={`/Book-API/details/${book.id}`}>Read More >></Link>
       </p>
     </article>
   );
