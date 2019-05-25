@@ -19,9 +19,9 @@ class App extends Component {
         <BrowserRouter>
           <Header />
           <Switch>
-            <Route exact path="/home" component={Books} />
-            <Route exact path="/details/:id" component={Details} />
-            <Route exact path="/favourites" component={Favourites} />
+            <Route exact path="/Book-API" component={Books} />
+            <Route exact path="/Book-API/details/:id" component={Details} />
+            <Route exact path="/Book-API/favourites" component={Favourites} />
           </Switch>
           <Footer />
         </BrowserRouter>

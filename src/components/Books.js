@@ -1,6 +1,5 @@
 import React from "react";
 import { connect } from "react-redux";
-import { NavLink } from "react-router-dom";
 import { toggleFavourite } from "../actions/action";
 import styles from "../styles/App.module.scss";
 import Book from "./EachBook";
