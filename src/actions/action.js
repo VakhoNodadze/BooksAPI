@@ -21,13 +21,8 @@ export const toggleFavourite = id => ({
   type: TOGGLE_FAVOURITE,
   id
 });
-/* 
-export function fetchRequest(payload) {
-  return { type: "FETCH_REQUEST", payload };
-}
- */
 
-export function fetchBooks(query) {
+export function fetchBooks() {
   return dispatch => {
     dispatch(fetchBooksRequest());
     return fetch(

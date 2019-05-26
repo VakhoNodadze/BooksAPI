@@ -25,7 +25,6 @@ class Details extends Component {
     return (
       book && (
         <main className={details.main}>
-          {console.log("State main: ", book)}
           <img
             src={
               book.volumeInfo.imageLinks.small ||
@@ -67,7 +66,6 @@ class Details extends Component {
               >
                 Click here to view the book online
               </a>
-              {console.log("page", book.accessInfo.webReaderLink)}
             </p>
           </div>
         </main>

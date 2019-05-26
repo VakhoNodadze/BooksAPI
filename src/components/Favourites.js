@@ -10,7 +10,6 @@ const Favourties = props => {
 
   const handleFavoriteToggle = id => {
     props.toggleFavourite(id);
-    console.log(id);
   };
   if (books.length === 0) return <Loader />;
   return (

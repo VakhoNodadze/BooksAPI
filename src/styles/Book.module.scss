@@ -1,5 +1,10 @@
+$background: #3a4877;
+$white: #ffff;
+$hover: #1a233d;
+$primary: #fb9039;
+
 .article {
-  background: #3a4877;
+  background: $background;
   display: grid;
   grid-template-columns: 1fr 4fr;
   flex: calc(50% - 5em) 1 1;
@@ -12,8 +17,8 @@
     margin: 0;
   }
   &:hover {
-    background: #1a233d;
-    color: #fff;
+    background: $hover;
+    color: $white;
     cursor: pointer;
   }
   & > div {
@@ -42,14 +47,14 @@
   }
   & .readmore {
     font-size: 1.2em;
-    color: #fff;
+    color: $white;
     grid-column: 1/3;
     justify-self: end;
     & a {
       text-decoration: none;
-      color: #fff;
+      color: $white;
       &:hover {
-        color: #fb9039;
+        color: $primary;
       }
     }
   }

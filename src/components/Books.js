@@ -8,7 +8,7 @@ import Loader from "./Loader";
 const Main = props => {
   const { books } = props.bookState;
 
-  const handleFavoriteToggle = id => {
+  const handleFavourite = id => {
     props.toggleFavourite(id);
   };
   if (books.length === 0) return <Loader />;
@@ -20,7 +20,7 @@ const Main = props => {
             <Book
               key={book.id}
               book={book}
-              onLike={bookId => handleFavoriteToggle(bookId)}
+              onLike={bookId => handleFavourite(bookId)}
             />
           );
         })}
