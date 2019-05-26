@@ -34,27 +34,29 @@ class Main extends Component {
 
     return (
       <React.Fragment>
-        <div className={styles.container}>
-          <input
-            type="text"
-            placeholder="Search..."
-            value={this.state.search}
-            onChange={this.updateSearch}
-          />
-          <div className={styles.search} />
+        <div className={styles.wrapper}>
+          <div className={styles.container}>
+            <input
+              type="text"
+              placeholder="Search..."
+              value={this.state.search}
+              onChange={this.updateSearch}
+            />
+            <div className={styles.search} />
+          </div>
+          <main className={styles.main}>
+            {filteredBooks.map(book => {
+              return (
+                <Book
+                  key={book.id}
+                  book={book}
+                  onLike={bookId => handleFavourite(bookId)}
+                />
+              );
+            })}
+            {console.log(filteredBooks)}
+          </main>
         </div>
-        <main className={styles.main}>
-          {filteredBooks.map(book => {
-            return (
-              <Book
-                key={book.id}
-                book={book}
-                onLike={bookId => handleFavourite(bookId)}
-              />
-            );
-          })}
-          {console.log(filteredBooks)}
-        </main>
       </React.Fragment>
     );
   }
