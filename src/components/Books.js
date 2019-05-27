@@ -5,7 +5,7 @@ import {
   fetchBooksSuccess,
   fetchBooks
 } from "../actions/action";
-import styles from "../styles/App.module.scss";
+import styles from "../styles/Books.module.scss";
 import Book from "./EachBook";
 import Loader from "./Loader";
 
@@ -23,7 +23,7 @@ class Main extends Component {
     const { books } = this.props.bookState;
     const filteredBooks = books.filter(book => {
       return (
-        book.volumeInfo.title.toLowerCase().indexOf(this.state.search) != -1
+        book.volumeInfo.title.toLowerCase().indexOf(this.state.search) !== -1
       );
     });
 

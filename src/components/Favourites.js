@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../styles/App.module.scss";
+import styles from "../styles/Books.module.scss";
 import Book from "./EachBook";
 import Loader from "./Loader";
 import { connect } from "react-redux";
