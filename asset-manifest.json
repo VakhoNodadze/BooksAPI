@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Book-API/static/css/main.d2e1df1d.chunk.css",
-    "main.js": "/Book-API/static/js/main.16fcac69.chunk.js",
-    "main.js.map": "/Book-API/static/js/main.16fcac69.chunk.js.map",
+    "main.css": "/Book-API/static/css/main.a45166d5.chunk.css",
+    "main.js": "/Book-API/static/js/main.ee20603b.chunk.js",
+    "main.js.map": "/Book-API/static/js/main.ee20603b.chunk.js.map",
     "runtime~main.js": "/Book-API/static/js/runtime~main.6244efac.js",
     "runtime~main.js.map": "/Book-API/static/js/runtime~main.6244efac.js.map",
-    "static/js/2.0910cb46.chunk.js": "/Book-API/static/js/2.0910cb46.chunk.js",
-    "static/js/2.0910cb46.chunk.js.map": "/Book-API/static/js/2.0910cb46.chunk.js.map",
+    "static/js/2.89557c10.chunk.js": "/Book-API/static/js/2.89557c10.chunk.js",
+    "static/js/2.89557c10.chunk.js.map": "/Book-API/static/js/2.89557c10.chunk.js.map",
     "index.html": "/Book-API/index.html",
-    "precache-manifest.67bdc2ad6d5347ca8c1caef244874541.js": "/Book-API/precache-manifest.67bdc2ad6d5347ca8c1caef244874541.js",
+    "precache-manifest.ae049ab32a91281dadf4b0f4a9fa7a70.js": "/Book-API/precache-manifest.ae049ab32a91281dadf4b0f4a9fa7a70.js",
     "service-worker.js": "/Book-API/service-worker.js",
-    "static/css/main.d2e1df1d.chunk.css.map": "/Book-API/static/css/main.d2e1df1d.chunk.css.map"
+    "static/css/main.a45166d5.chunk.css.map": "/Book-API/static/css/main.a45166d5.chunk.css.map"
   }
 }
