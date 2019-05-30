@@ -8,9 +8,10 @@ export const fetchBooksRequest = query => ({
   query
 });
 
-export const fetchBooksSuccess = payload => {
-  return { type: FETCH_SUCCESS, payload };
-};
+export const fetchBooksSuccess = payload => ({
+  type: FETCH_SUCCESS,
+  payload
+});
 
 export const fetchBooksFailure = error => ({
   type: FETCH_FAILURE,
